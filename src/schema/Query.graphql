@@ -1,0 +1,5 @@
+type Query {
+  # GROUPS
+  groups: [Group]
+  group(filter: GroupFilter!): Group
+}

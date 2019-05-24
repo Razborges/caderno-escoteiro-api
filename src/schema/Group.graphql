@@ -1,0 +1,16 @@
+type Group {
+  id: ID!
+  number: Int!
+  state: String
+}
+
+input GroupInput {
+  number: Int!
+  state: String!
+}
+
+input GroupFilter {
+  id: ID
+  number: Int
+  state: String
+}
