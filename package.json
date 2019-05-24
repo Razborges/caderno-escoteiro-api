@@ -1,0 +1,42 @@
+{
+  "name": "y",
+  "version": "0.0.1",
+  "description": "Troca de atividades escoteiras entre chefes",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ext js,graphql",
+    "migration": "npx knex migrate:latest",
+    "rollback": "npx knex migrate:rollback",
+    "lint": "npx eslint index.js src/** --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Razborges/caderno-escoteiro-api.git"
+  },
+  "keywords": [
+    "graphql",
+    "node",
+    "api",
+    "apollo"
+  ],
+  "author": "RazBorges",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Razborges/caderno-escoteiro-api/issues"
+  },
+  "homepage": "https://github.com/Razborges/caderno-escoteiro-api#readme",
+  "dependencies": {
+    "apollo-server": "^2.5.0",
+    "bcrypt": "^3.0.6",
+    "dotenv": "^8.0.0",
+    "graphql": "^14.3.1",
+    "graphql-import": "^0.7.1",
+    "jwt-simple": "^0.5.6",
+    "knex": "^0.16.5",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "nodemon": "^1.19.0"
+  }
+}
