@@ -1,5 +1,5 @@
 type Query {
   # GROUPS
-  groups: [Group]
-  group(filter: GroupFilter!): Group
+  groups(filter: GroupFilter): [Group]
+  group(id: ID!): Group
 }

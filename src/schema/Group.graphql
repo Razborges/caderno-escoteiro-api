@@ -9,8 +9,12 @@ input GroupInput {
   state: String!
 }
 
+input GroupUpdate {
+  number: Int
+  state: String
+}
+
 input GroupFilter {
-  id: ID
   number: Int
   state: String
 }

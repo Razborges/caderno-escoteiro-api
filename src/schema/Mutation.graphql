@@ -1,5 +1,5 @@
 type Mutation {
   # GROUPS
   createGroup(data: GroupInput!): Group!
-  updateGroup(filter: GroupFilter!, data: GroupInput!): Group
+  updateGroup(id: ID!, data: GroupUpdate!): Group
 }
