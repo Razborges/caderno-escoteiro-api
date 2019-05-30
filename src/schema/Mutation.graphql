@@ -2,4 +2,7 @@ type Mutation {
   # GROUPS
   createGroup(data: GroupInput!): Group!
   updateGroup(id: ID!, data: GroupUpdate!): Group
+  createUser(data: UserInput!): User!
+  updateUser(id: ID!, data: UserUpdate!): User
+  deleteUser(id: ID!): User
 }

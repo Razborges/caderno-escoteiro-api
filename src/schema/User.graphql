@@ -1,0 +1,33 @@
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  password: String!
+  group: Group!
+  type: String
+  role: String!
+  status: Boolean!
+}
+
+input UserInput {
+  name: String!
+  email: String!
+  password: String!
+  group: ID!
+  type: String
+}
+
+input UserUpdate {
+  name: String
+  email: String
+  password: String
+  group: ID
+  type: String
+  status: Boolean
+}
+
+input UserFilter {
+  name: String
+  email: String
+  type: String
+}
