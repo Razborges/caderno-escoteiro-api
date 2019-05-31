@@ -2,7 +2,13 @@ type Mutation {
   # GROUPS
   createGroup(data: GroupInput!): Group!
   updateGroup(id: ID!, data: GroupUpdate!): Group
+  # USERS
   createUser(data: UserInput!): User!
   updateUser(id: ID!, data: UserUpdate!): User
   deleteUser(id: ID!): User
+  # GAMES
+  createGame(data: GameInput!): Game!
+  updateGame(id: ID!, data: GameUpdate!): Game
+  deleteGame(id: ID!): Game
+  voteGame(id: ID!, vote: Float!): Game
 }

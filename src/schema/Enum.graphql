@@ -1,0 +1,6 @@
+enum TypeEnum {
+  lobinho
+  escoteiro
+  senior
+  pioneiro
+}

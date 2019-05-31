@@ -4,7 +4,7 @@ type User {
   email: String!
   password: String!
   group: Group!
-  type: String
+  type: TypeEnum
   role: String!
   status: Boolean!
 }
@@ -14,7 +14,7 @@ input UserInput {
   email: String!
   password: String!
   group: ID!
-  type: String
+  type: TypeEnum
 }
 
 input UserUpdate {
@@ -22,12 +22,12 @@ input UserUpdate {
   email: String
   password: String
   group: ID
-  type: String
+  type: TypeEnum
   status: Boolean
 }
 
 input UserFilter {
   name: String
   email: String
-  type: String
+  type: TypeEnum
 }

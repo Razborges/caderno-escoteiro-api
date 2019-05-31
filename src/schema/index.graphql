@@ -1,5 +1,7 @@
 #import Group from 'Group.graphql'
 #import User from 'User.graphql'
+#import Game from 'Game.graphql'
 
 #import Query from 'Query.graphql'
 #import Mutation from 'Mutation.graphql'
+#import TypeEnum from 'Enum.graphql'

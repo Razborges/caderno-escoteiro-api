@@ -2,6 +2,10 @@ type Query {
   # GROUPS
   groups(filter: GroupFilter): [Group]
   group(id: ID!): Group
+  # USERS
   users(filter: UserFilter): [User]
   user(id: ID!): User
+  # GAMES
+  games(filter: GameFilter): [Game]
+  game(id: ID!): Game
 }

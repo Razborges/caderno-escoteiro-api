@@ -1,8 +1,10 @@
 // @ts-nocheck
-const group = require('./group')
-const user = require('./user')
+const Group = require('./group')
+const User = require('./user')
+const Game = require('./game')
 
 module.exports = {
-  ...group,
-  ...user
+  ...Game,
+  ...Group,
+  ...User
 }

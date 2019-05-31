@@ -1,0 +1,43 @@
+type Game {
+  id: ID!
+  name: String!
+  rules: String!
+  material: String
+  goals: String
+  obs: String
+  duration: Int!
+  url: String
+  property: String
+  user: User!
+  vote: Float!
+  status: Boolean!
+}
+
+input GameInput {
+  name: String!
+  rules: String!
+  material: String
+  goals: String
+  obs: String
+  duration: Int
+  url: String
+  property: String
+  user: ID!
+}
+
+input GameUpdate {
+  name: String
+  rules: String
+  material: String
+  goals: String
+  obs: String
+  duration: Int
+  url: String
+  property: String
+  vote: Float
+  user: ID
+}
+
+input GameFilter {
+  search: String
+}
