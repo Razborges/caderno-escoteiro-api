@@ -2,6 +2,7 @@ type Group {
   id: ID!
   number: Int!
   state: String
+  user: [User]!
 }
 
 input GroupInput {
